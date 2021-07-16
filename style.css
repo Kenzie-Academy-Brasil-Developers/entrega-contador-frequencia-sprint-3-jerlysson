@@ -1,0 +1,51 @@
+:root{
+    --borda: 1px solid black;
+}
+
+h1, h2{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#container{
+    background-color: rgb(99, 78, 26);
+    width: 80vw;
+    margin: 0 auto;
+    border: var(--borda);
+}
+#text{
+    margin: 7%;
+}
+#textArea{
+    display: flex;
+    flex-direction: column;
+    margin: 7% 7% 0;
+}
+#countButton{
+    width: 180px;
+    margin: 0px auto 15px;
+}
+#boxResult{
+    display: flex;
+    justify-content: space-evenly;
+    /* border: var(--borda); */
+}
+.box{
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border: var(--borda);
+}
+@media (min-width: 768px) {
+    #text{
+        margin: 0;
+    }
+    .box{
+        width: 40%;
+    }
+    
+}
